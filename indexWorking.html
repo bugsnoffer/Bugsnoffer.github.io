@@ -44,26 +44,6 @@
         </div>
     </header>
 	
-
-<link type="text/css" rel="stylesheet" href="https://5x.brightpattern.com/clientweb/chat-client-v4/css/form.css">
-<script type="text/javascript">
-    SERVICE_PATTERN_CHAT_CONFIG = {
-        appId: '1234567890777',
-        apiUrl: 'https://5x.brightpattern.com/clientweb/api/v1',
-        tenantUrl: '5x.brightpattern.com',
-        chatPath: 'https://5x.brightpattern.com/clientweb/chat-client-v4/'
-
-        /*        
-         // Default customer data, it can be collected on current site's context
-         first_name: '',
-         last_name: '',
-         email: '',
-         phone_number: ''
- 		*/
-    };
-</script>
-<script src="https://5x.brightpattern.com/clientweb/chat-client-v4/js/init.js"></script> 
-	
     <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Logo and responsive toggle -->
@@ -162,7 +142,40 @@ Note: Use <!DOCTYPE html> on the page where snippet located for better rendering
         </div>
 	
 	
+<script type="text/javascript">
+    SERVICE_PATTERN_CHAT_CONFIG = {
+        appId: '1234567890777',
+        clientId: 'WebChat',
+        apiUrl: 'https://5x.brightpattern.com:443/clientweb/api/v1',
+        tenantUrl: '5x.brightpattern.com',
+        width: 300,
+		togetherJS_enabled : true,
+        chatPath: 'https://5x.brightpattern.com:443/clientweb/chat-client-v2/',
+        callback: false,
+        hidden: false,
+        subject: '',
+        sound_notification: false,
+        logging: false,
+        sound_notification_file: 'https://5x.brightpattern.com:443/clientweb/chat-client-v2/media/ding.mp3',
 
+        /* Default customer data, it can be collected on current site's context*/
+        /* Customer data also can be requested via "Request Input" block + "MobileChatCustomerData" formName */
+
+         first_name: 'Richard',
+         last_name: 'Green',
+         email: 'richard.green@brightpattern.com',
+         account_number: '011',
+         phone_number: '61402591597',
+         location : {
+             latitude: -33.860420,
+             longitude: 151.209132 
+         }
+/* */
+    };
+</script>
+
+<script type="text/javascript" src="https://5x.brightpattern.com:443/clientweb/chat-client-v2/js/snippet.js"></script>
+ 
     <script src="js/jquery-1.11.3.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
